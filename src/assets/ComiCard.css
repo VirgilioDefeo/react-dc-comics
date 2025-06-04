@@ -1,0 +1,33 @@
+/* src/ComicCard.css */
+.comic-card {
+    background-color: #121212;
+    color: white;
+    padding: 0;
+    text-align: left;
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 0;
+}
+
+.comic-card:hover {
+    transform: translateY(-5px);
+}
+
+.comic-thumbnail {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+.comic-title {
+    font-size: 0.9em;
+    font-weight: normal;
+    margin-top: 10px;
+    padding: 0 5px 10px 5px;
+    text-transform: uppercase;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
