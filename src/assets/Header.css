@@ -1,4 +1,4 @@
-/* Top Header Styles */
+
 .top-header {
   background-color: white;
   padding: 10px 0;
@@ -20,7 +20,7 @@
 }
 
 
-/* Existing styles for content and blue strip */
+
 .dc-header {
 background-image: url(./jumbotron.jpg);
 background-repeat: no-repeat;

@@ -1,24 +1,22 @@
 
 import './Main.css';
 import NavStrip from "./NavStrip"
-import comics from "../assets/dc-comics-2/comics"
-function Main() {
+// import comics from "../assets/dc-comics-2/comics"
+import ComicCard from './ComicCard';
+
+function Main({ comics }) {
   return (
-    <main className='dc-card'>
-      <div className="card-container">
-        <div className="comics-grid">
-          {comics.map((comic) => (
-            <div key={comic.id} className="comic-card">
-              <img src={comic.thumb} alt={comic.title} />
-              <h3>{comic.title}</h3>
-              <p>{comic.price}</p>
-            </div>
-          ))}
-        </div>
+    <main className="main-comics">
+      <div className="comics-grid">
+        {comics.map(comic => (
+          <ComicCard key={comic.id} comic={comic} />
+        ))}
       </div>
-      <NavStrip />
+       <NavStrip />
     </main>
   );
-};
+}
 
+
+    
 export default Main;
